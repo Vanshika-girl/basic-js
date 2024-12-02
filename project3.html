@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Programming Basics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        section h2 {
+            color: #333;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        #code-example {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Learn Programming Basics</h1>
+        <p>Your journey into coding starts here!</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#tips">Learning Tips</a>
+        <a href="#practice">Practice</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Programming</h2>
+            <p>Programming is a way to communicate with computers to solve problems and create software. Learning to code opens up endless possibilities!</p>
+        </section>
+
+        <section id="tips">
+            <h2>Learning Tips</h2>
+            <ul>
+                <li>Start with small, manageable projects.</li>
+                <li>Practice regularly to build your skills.</li>
+                <li>Don’t be afraid to ask for help or use online resources.</li>
+            </ul>
+        </section>
+
+        <section id="practice">
+            <h2>Practice Writing Code</h2>
+            <p>Try running the example below to see how coding works:</p>
+            <pre id="code-example">console.log('Hello, World!');</pre>
+            <button class="button" onclick="showOutput()">Run Example</button>
+            <p id="output"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Programming Basics Guide</p>
+    </footer>
+
+    <script>
+        function showOutput() {
+            const exampleCode = "console.log('Hello, World!');";
+            document.getElementById('output').innerText = `Output: Hello, World!`;
+        }
+    </script>
+</body>
+</html>
+
